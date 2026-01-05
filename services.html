@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | IronBlade Lawn Care</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2b6e4a',
+                        secondary: '#d4a017',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <script src="components/navbar.js"></script>
+    <ironblade-navbar></ironblade-navbar>
+
+    <!-- Hero Section -->
+    <section class="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+        <img 
+            src="https://images.unsplash.com/photo-1547099036-b43cd570bdae?q=80&w=1724&auto=format&fit=crop"
+            alt="Perfectly maintained lawn"
+            class="absolute inset-0 w-full h-full object-cover"
+        >
+        <div class="absolute inset-0 bg-black/45"></div>
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-wide text-white mb-5">
+                OUR SERVICES
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 leading-relaxed">
+                Premium lawn care solutions tailored to North Florida's unique climate.
+            </p>
+                <a href="contact.html" class="bg-secondary hover:bg-secondary/90 text-white font-semibold px-8 py-3 rounded-lg transition">
+                    Free Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">OUR PREMIUM SERVICES</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Cards -->
+                <!-- Card 1 -->
+                <div class="bg-primary rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+                    <img src="https://plus.unsplash.com/premium_photo-1661964075728-914c8ede7b85?q=80&w=1784&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Lawn fertilization" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-black mb-2">Lawn Fertilization</h3>
+                        <p class="text-white mb-4">Our specialized programs nourish your lawn for year-round health and beauty.</p>
+                        <ul class="space-y-2 mb-4 text-white">
+                            <li class="flex items-center"><i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>Customized nutrient blends</li>
+                            <li class="flex items-center"><i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>Seasonal applications</li>
+                            <li class="flex items-center"><i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>Weed prevention</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-primary rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+                    <img src="https://images.unsplash.com/photo-1597201278257-3687be27d954?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFuZHNjYXBpbmd8ZW58MHx8MHx8fDA%3D" alt="Landscape design" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-black mb-2">Landscape Design</h3>
+                        <p class="text-white mb-4">Transform your outdoor space with our custom landscape solutions.</p>
+                        <ul class="space-y-2 mb-4 text-white">
+                            <li class="flex items-center"><i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>Custom designs</li>
+                            <li class="flex items-center"><i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>Plant selection</li>
+                            <li class="flex items-center"><i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>Hardscape integration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-primary rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+                    <img src="https://images.unsplash.com/photo-1703243056931-265dbc9be205?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Irrigation services" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-black mb-2">Irrigation Services</h3>
+                        <p class="text-white mb-4">Expert installation and maintenance for optimal water efficiency.</p>
+                        <ul class="space-y-2 mb-4 text-white">
+                            <li class="flex items-center"><i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>System installation</li>
+                            <li class="flex items-center"><i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>Repairs & upgrades</li>
+                            <li class="flex items-center"><i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>Smart controller setup</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-primary rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+                    <img src="https://huggingface.co/spaces/Matb3nj1/ironblade-lawn-care/resolve/main/images/Pest control final 2.jpeg" alt="Pest control" class="w-full h-48 object-cover">
+<div class="p-6">
+                        <h3 class="text-xl font-bold text-black mb-2">Pest Control</h3>
+                        <p class="text-white mb-4">Comprehensive protection for your lawn and home from unwanted pests.</p>
+                        <ul class="space-y-2 mb-4 text-white">
+                            <li class="flex items-center"><i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>Lawn pests</li>
+                            <li class="flex items-center"><i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>Termite prevention</li>
+                            <li class="flex items-center"><i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>Eco-friendly options</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-primary rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+                    <img src="https://images.unsplash.com/photo-1631719606912-e90abc91683b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Paver installation" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-black mb-2">Paver Installation</h3>
+                        <p class="text-white mb-4">Beautiful, durable hardscaping solutions for your outdoor living space.</p>
+                        <ul class="space-y-2 mb-4 text-white">
+                            <li class="flex items-center"><i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>Patios & walkways</li>
+                            <li class="flex items-center"><i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>Driveways</li>
+                            <li class="flex items-center"><i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>Pool decks</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-primary rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+                    <img src="https://images.unsplash.com/photo-1763641007301-17d2b2f6c3f7?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fG91dGRvb3IlMjBsaWdodGluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="Outdoor lighting" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-black mb-2">Outdoor Lighting</h3>
+                        <p class="text-white mb-4">Illuminate your property with our professional landscape lighting.</p>
+                        <ul class="space-y-2 mb-4 text-white">
+                            <li class="flex items-center"><i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>Path lighting</li>
+                            <li class="flex items-center"><i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>Accent lighting</li>
+                            <li class="flex items-center"><i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>Smart controls</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-6">READY TO TRANSFORM YOUR OUTDOOR SPACE?</h2>
+                <p class="text-xl mb-8">Contact IronBlade Lawn Care today for a free consultation and quote.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-lg transition duration-300 flex items-center justify-center">
+                        <i data-feather="mail" class="mr-2"></i> Get A Free Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <ironblade-footer></ironblade-footer>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script>
+        feather.replace();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

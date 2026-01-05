@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About IronBlade Lawn Care | Precision Lawn Care in North Florida</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2b6e4a',
+                        secondary: '#d4a017',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Navbar -->
+    <script src="components/navbar.js"></script>
+    <ironblade-navbar></ironblade-navbar>
+
+    <!-- Hero Section -->
+<section class="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+    <!-- Background Image -->
+    <img 
+        src="https://images.unsplash.com/photo-1547099036-b43cd570bdae?q=80&w=1724&auto=format&fit=crop"
+        alt="Perfectly maintained lawn"
+        class="absolute inset-0 w-full h-full object-cover"
+    >
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/45"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 text-center px-6 max-w-4xl">
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-wide text-white mb-5">
+            ABOUT IRONBLADE
+        </h1>
+
+        <p class="text-lg md:text-xl text-gray-200 mb-10 leading-relaxed">
+            Built on precision, discipline, and pride in every blade of grass.
+        </p>
+    </div>
+</section>
+
+    <!-- Our Story -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
+                    <p class="text-gray-700 mb-5 leading-relaxed">
+                        IronBlade Lawn Care started with a simple realization — most lawn services rush jobs, cut corners,
+                        and treat properties like numbers instead of homes.
+                    </p>
+                    <p class="text-gray-700 mb-5 leading-relaxed">
+                        We knew homeowners deserved better. Lawns that look sharp year-round. Crews that show up on time.
+                        Work done with intention, not shortcuts.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        From day one, IronBlade has stood for discipline, precision, and consistency — values we bring
+                        to every property we touch.
+                    </p>
+                </div>
+
+                <img
+                    src="https://huggingface.co/spaces/Matb3nj1/clear-cut-crew-lawn-masters/resolve/main/images/group pic.jpg"
+alt="Perfectly maintained lawn"
+                    class="rounded-lg shadow-lg"
+                >
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">WHAT SETS US APART</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-primary p-8 rounded-lg shadow-lg">
+                    <i data-feather="target" class="w-10 h-10 text-secondary mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-3">Precision Work</h3>
+                    <p class="text-gray-200">
+                        Clean lines, even cuts, and detail-oriented finishes. We treat every lawn like it’s our own.
+                    </p>
+                </div>
+
+                <div class="bg-primary p-8 rounded-lg shadow-lg">
+                    <i data-feather="shield" class="w-10 h-10 text-secondary mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-3">Reliable Service</h3>
+                    <p class="text-gray-200">
+                        No missed appointments. No excuses. Just consistent, professional service you can trust.
+                    </p>
+                </div>
+
+                <div class="bg-primary p-8 rounded-lg shadow-lg">
+                    <i data-feather="award" class="w-10 h-10 text-secondary mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-3">Pride & Craftsmanship</h3>
+                    <p class="text-gray-200">
+                        We don’t rush jobs. We perfect them. That mindset is the IronBlade difference.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Empathy Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">
+                We Know What It’s Like
+            </h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                You work hard for your home. You want to come back to a property that feels clean,
+                organized, and taken care of — not something that adds stress to your life.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                That’s why we focus on long-term results, honest communication, and service you never
+                have to second-guess.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-6 text-center max-w-4xl">
+            <h2 class="text-4xl font-bold mb-6">
+                EXPERIENCE THE IRONBLADE STANDARD
+            </h2>
+            <p class="text-xl mb-8">
+                Get a free quote and see what disciplined lawn care really looks like.
+            </p>
+            <a href="contact.html"
+               class="inline-flex items-center bg-secondary hover:bg-secondary/90 text-white font-bold px-8 py-4 rounded-lg transition">
+                <i data-feather="mail" class="mr-2"></i> Get A Free Quote
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <script src="components/footer.js"></script>
+    <ironblade-footer></ironblade-footer>
+
+    <script>
+        feather.replace();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

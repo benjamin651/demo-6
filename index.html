@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronBlade Lawn Care | Premium Lawn Services in North Florida</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2b6e4a',
+                        secondary: '#d4a017',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Component -->
+    <script src="components/navbar.js"></script>
+    <ironblade-navbar></ironblade-navbar>
+
+<section class="relative h-[85vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+    <!-- Background Image -->
+    <img 
+        src="https://images.unsplash.com/photo-1547099036-b43cd570bdae?q=80&w=1724&auto=format&fit=crop"
+        alt="Lush green lawn"
+        class="absolute inset-0 w-full h-full object-cover"
+    >
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/45"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 text-center px-6 max-w-4xl">
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-wide text-white mb-5">
+            IRONBLADE LAWN CARE
+        </h1>
+
+        <p class="text-lg md:text-xl text-gray-200 mb-10 leading-relaxed">
+            Precision lawn care for North Florida homeowners who expect perfection.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#services"
+               class="bg-primary hover:bg-primary/90 text-white font-semibold px-8 py-3 rounded-lg transition">
+                View Services
+            </a>
+            <a href="contact.html"
+               class="bg-secondary hover:bg-secondary/90 text-white font-semibold px-8 py-3 rounded-lg transition">
+                Free Quote
+            </a>
+        </div>
+    </div>
+</section>
+        <!-- Page Previews Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">EXPLORE IRONBLADE</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- About Preview -->
+                <div class="bg-primary rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+                    <img src="https://huggingface.co/spaces/Matb3nj1/ironblade-lawn-care/resolve/main/images/about%20us%20page%20pic.png" alt="About IronBlade" class="w-full h-48 object-cover">
+<div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">About Us</h3>
+                        <p class="text-white mb-4">Learn about our story, approach, and meet the team behind IronBlade's premium lawn care services.</p>
+                        <a href="about.html" class="text-white font-semibold flex items-center">
+                            Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Testimonials Preview -->
+                <div class="bg-primary rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+                    <img src="https://huggingface.co/spaces/Matb3nj1/ironblade-lawn-care/resolve/main/images/testimonials%20page%20pic.png" alt="Client testimonials" class="w-full h-48 object-cover">
+<div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Testimonials</h3>
+                        <p class="text-white mb-4">See what our satisfied clients say about their IronBlade experience.</p>
+                        <a href="testimonials.html" class="text-white font-semibold flex items-center">
+                            Read reviews <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Preview -->
+                <div class="bg-primary rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+                    <img src="https://huggingface.co/spaces/Matb3nj1/ironblade-lawn-care/resolve/main/images/Contact page pic.png" alt="Contact us" class="w-full h-48 object-cover">
+<div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Contact</h3>
+                        <p class="text-white mb-4">Get in touch for a free consultation and quote for your lawn care needs.</p>
+                        <a href="contact.html" class="text-white font-semibold flex items-center">
+                            Reach out <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">OUR PREMIUM SERVICES</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-primary rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+                    <img src="https://plus.unsplash.com/premium_photo-1661964075728-914c8ede7b85?q=80&w=1784&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Lawn fertilization" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-black mb-2">Lawn Fertilization</h3>
+                        <p class="text-white mb-4">Our specialized programs nourish your lawn for year-round health and beauty.</p>
+                        <a href="services.html" class="text-white font-semibold flex items-center">
+                            Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+</div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-primary rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+                    <img src="https://images.unsplash.com/photo-1597201278257-3687be27d954?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFuZHNjYXBpbmd8ZW58MHx8MHx8fDA%3D" alt="Landscape design" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-black mb-2">Landscape Design</h3>
+                        <p class="text-white mb-4">Transform your outdoor space with our custom landscape solutions.</p>
+                        <a href="services.html" class="text-white font-semibold flex items-center">
+                            Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+</div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-primary rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+                    <img src="https://images.unsplash.com/photo-1703243056931-265dbc9be205?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Irrigation services" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-black mb-2">Irrigation Services</h3>
+                        <p class="text-white mb-4">Expert installation and maintenance for optimal water efficiency.</p>
+                        <a href="services.html" class="text-white font-semibold flex items-center">
+                            Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+</div>
+                </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">WHAT OUR CLIENTS SAY</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-primary p-8 rounded-lg shadow-md">
+    <div class="flex items-center mb-4">
+        <div class="text-secondary mr-2 flex space-x-1">
+            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+        </div>
+    </div>
+                    <p class="text-white mb-6">"IronBlade transformed our neglected yard into a neighborhood showpiece. Their attention to detail is unmatched."</p>
+                    <div class="flex items-center">
+                        <img src="http://static.photos/people/200x200/1" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-white">Michael R.</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-primary p-8 rounded-lg shadow-md">
+    <div class="flex items-center mb-4">
+        <div class="text-secondary mr-2 flex space-x-1">
+            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+        </div>
+    </div>
+                    <p class="text-white mb-6">"The paver patio IronBlade installed has become our favorite outdoor living space. Professional from start to finish."</p>
+                    <div class="flex items-center">
+                        <img src="http://static.photos/people/200x200/2" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-white">Sarah L.</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-primary p-8 rounded-lg shadow-md">
+    <div class="flex items-center mb-4">
+        <div class="text-secondary mr-2 flex space-x-1">
+            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+        </div>
+    </div>
+                    <p class="text-white mb-6">"After trying several lawn services, we finally found one that delivers consistent results. Worth every penny."</p>
+                    <div class="flex items-center">
+                        <img src="http://static.photos/people/200x200/3" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-white">David K.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-6">READY TO TRANSFORM YOUR OUTDOOR SPACE?</h2>
+                <p class="text-xl mb-8">Contact IronBlade Lawn Care today for a free consultation and quote.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-lg transition duration-300 flex items-center justify-center">
+                        <i data-feather="mail" class="mr-2"></i> Get A Free Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Component -->
+    <script src="components/footer.js"></script>
+    <ironblade-footer></ironblade-footer>
+<script>
+        feather.replace();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

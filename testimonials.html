@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | IronBlade Lawn Care</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Theme -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2b6e4a',
+                        secondary: '#d4a017'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 antialiased">
+
+    <!-- Navbar -->
+    <script src="components/navbar.js"></script>
+    <ironblade-navbar></ironblade-navbar>
+
+    <!-- Hero Section -->
+    <section class="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+        <img 
+            src="https://images.unsplash.com/photo-1547099036-b43cd570bdae?q=80&w=1724&auto=format&fit=crop"
+            alt="Lush lawn hero background"
+            class="absolute inset-0 w-full h-full object-cover"
+        >
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">What Our Clients Say</h1>
+            <p class="text-lg md:text-xl text-gray-200 leading-relaxed">
+                Homeowners across North Florida trust IronBlade for consistent, high-quality lawn care.
+            </p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Testimonial 1 -->
+                <div class="bg-primary rounded-xl p-8 shadow-lg hover:scale-105 transition transform">
+                    <div class="flex gap-1 mb-4">
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                    </div>
+                    <p class="text-white mb-6">
+                        “IronBlade is the most reliable lawn service we’ve used. Our yard looks sharp every single week.”
+                    </p>
+                    <div>
+                        <p class="font-semibold text-white">Michael R.</p>
+                        <p class="text-gray-200 text-sm">Gainesville, FL</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-primary rounded-xl p-8 shadow-lg hover:scale-105 transition transform">
+                    <div class="flex gap-1 mb-4">
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                    </div>
+                    <p class="text-white mb-6">
+                        “Very professional and detail-oriented. We noticed a healthier lawn within the first month.”
+                    </p>
+                    <div>
+                        <p class="font-semibold text-white">Sarah L.</p>
+                        <p class="text-gray-200 text-sm">Ocala, FL</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-primary rounded-xl p-8 shadow-lg hover:scale-105 transition transform">
+                    <div class="flex gap-1 mb-4">
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                    </div>
+                    <p class="text-white mb-6">
+                        “Consistent service, great communication, and excellent results. Highly recommended.”
+                    </p>
+                    <div>
+                        <p class="font-semibold text-white">David K.</p>
+                        <p class="text-gray-200 text-sm">Alachua, FL</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="bg-primary rounded-xl p-8 shadow-lg hover:scale-105 transition transform">
+                    <div class="flex gap-1 mb-4">
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                    </div>
+                    <p class="text-white mb-6">
+                        “Our yard looks professionally maintained year-round. IronBlade makes it effortless.”
+                    </p>
+                    <div>
+                        <p class="font-semibold text-white">Emily T.</p>
+                        <p class="text-gray-200 text-sm">Newberry, FL</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="bg-primary rounded-xl p-8 shadow-lg hover:scale-105 transition transform">
+                    <div class="flex gap-1 mb-4">
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                    </div>
+                    <p class="text-white mb-6">
+                        “They show up on time, every time, and the quality never drops.”
+                    </p>
+                    <div>
+                        <p class="font-semibold text-white">Jason M.</p>
+                        <p class="text-gray-200 text-sm">High Springs, FL</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 6 -->
+                <div class="bg-primary rounded-xl p-8 shadow-lg hover:scale-105 transition transform">
+                    <div class="flex gap-1 mb-4">
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                        <svg class="w-5 h-5 text-secondary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.954L10 0l2.95 5.955 6.562.955-4.756 4.636 1.122 6.544z"/></svg>
+                    </div>
+                    <p class="text-white mb-6">
+                        “IronBlade delivers premium results without any hassle. Best lawn service we’ve had.”
+                    </p>
+                    <div>
+                        <p class="font-semibold text-white">Lauren P.</p>
+                        <p class="text-gray-200 text-sm">Archer, FL</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-6">READY TO TRANSFORM YOUR OUTDOOR SPACE?</h2>
+                <p class="text-xl mb-8">Contact IronBlade Lawn Care today for a free consultation and quote.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-lg transition duration-300 flex items-center justify-center">
+                        <i data-feather="mail" class="mr-2"></i> Get A Free Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <script src="components/footer.js"></script>
+    <ironblade-footer></ironblade-footer>
+
+</body>
+</html>
