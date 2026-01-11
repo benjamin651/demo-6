@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | IronBlade Lawn Care</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2b6e4a',
+                        secondary: '#d4a017',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <script src="components/navbar.js"></script>
+    <ironblade-navbar></ironblade-navbar>
+
+    <!-- Thank You Section -->
+    <section class="min-h-screen flex items-center justify-center py-20">
+        <div class="max-w-4xl mx-auto text-center px-6">
+            <div class="bg-[#2b6e4a] p-12 rounded-xl shadow-xl">
+                <div class="w-24 h-24 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-8">
+                    <i data-feather="check-circle" class="text-secondary w-12 h-12"></i>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Thank You!</h1>
+                <p class="text-xl text-white mb-8">
+                    We've received your message and will get back to you within 24 hours.
+                    A confirmation has been sent to your email address.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/" class="bg-[#d4a017] hover:bg-secondary/90 text-white font-semibold px-8 py-3 rounded-lg transition">
+                        Back to Home
+                    </a>
+                    <a href="contact.html" class="bg-secondary hover:bg-secondary/90 text-white font-semibold px-8 py-3 rounded-lg transition">
+                        Contact Us Again
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <script src="components/footer.js"></script>
+    <ironblade-footer></ironblade-footer>
+
+    <script>
+        feather.replace();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
