@@ -1,189 +1,182 @@
 class IronbladeNavbar extends HTMLElement {
-    connectedCallback() {
-        this.attachShadow({ mode: 'open' });
-        this.shadowRoot.innerHTML = `
-        <style>
-            :host {
-                position: fixed;
-                top: 0;
-                left: 0;
-                right: 0;
-                z-index: 1000;
-                background: rgba(255, 255, 255, 0.92);
-                backdrop-filter: blur(8px);
-                border-bottom: 1px solid rgba(0,0,0,0.06);
-                transition: all 0.3s ease;
-            }
+  connectedCallback() {
+    this.attachShadow({ mode: "open" });
+    this.shadowRoot.innerHTML = `
+      <style>
+        :host {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 1000;
+          background: rgba(255,255,255,0.92);
+          backdrop-filter: blur(8px);
+          border-bottom: 1px solid rgba(0,0,0,0.06);
+          font-family: system-ui, sans-serif;
+        }
 
-            .navbar-container {
-                max-width: 1200px;
-                margin: 0 auto;
-                padding: 0.9rem 2rem;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
+        .navbar-container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0.9rem 1.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          position: relative;
+        }
 
-            /* Logo */
-            .logo {
-                display: flex;
-                align-items: center;
-                gap: 0.5rem;
-                font-size: 1.4rem;
-                font-weight: 800;
-                letter-spacing: 0.05em;
-                color: #2b6e4a;
-                text-decoration: none;
-            }
+        .logo {
+          display: flex;
+          align-items: center;
+          gap: .5rem;
+          font-size: 1.4rem;
+          font-weight: 800;
+          letter-spacing: .05em;
+          color: #2c6d49;
+          text-decoration: none;
+        }
 
-            .logo-icon {
-                color: #d4a017;
-            }
+        .nav-links {
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+        }
 
-            /* Nav links */
-            .nav-links {
-                display: flex;
-                align-items: center;
-                gap: 2rem;
-            }
+        .nav-link {
+          font-size: .95rem;
+          font-weight: 500;
+          color: #333;
+          text-decoration: none;
+        }
 
-            .nav-link {
-                position: relative;
-                font-size: 0.95rem;
-                font-weight: 500;
-                color: #333;
-                text-decoration: none;
-                padding: 0.25rem 0;
-                transition: color 0.25s ease;
-            }
+        .cta-button {
+          background: linear-gradient(135deg,#d4a017,#c19115);
+          color:#fff;
+          font-weight:600;
+          padding:.55rem 1.4rem;
+          border-radius:999px;
+          text-decoration:none;
+        }
 
-            .nav-link:hover {
-                color: #2b6e4a;
-            }
+        /* Hamburger */
+        .hamburger {
+          display:none;
+          flex-direction:column;
+          gap:5px;
+          cursor:pointer;
+        }
 
-            .nav-link::after {
-                content: '';
-                position: absolute;
-                left: 50%;
-                bottom: -6px;
-                width: 0;
-                height: 2px;
-                background: #d4a017;
-                transition: all 0.25s ease;
-                transform: translateX(-50%);
-            }
+        .hamburger span {
+          width:26px;
+          height:3px;
+          background:#2c6d49;
+          border-radius:5px;
+          transition:.3s;
+        }
 
-            .nav-link:hover::after {
-                width: 100%;
-            }
+        .hamburger.active span:nth-child(1){
+          transform:rotate(45deg) translate(5px,5px);
+        }
+        .hamburger.active span:nth-child(2){
+          opacity:0;
+        }
+        .hamburger.active span:nth-child(3){
+          transform:rotate(-45deg) translate(6px,-6px);
+        }
 
-            /* CTA */
-            .cta-button {
-                display: inline-flex;
-                align-items: center;
-                gap: 0.5rem;
-                background: linear-gradient(135deg, #d4a017, #c19115);
-                color: #fff;
-                font-size: 0.9rem;
-                font-weight: 600;
-                padding: 0.55rem 1.4rem;
-                border-radius: 999px;
-                text-decoration: none;
-                box-shadow: 0 4px 12px rgba(212,160,23,0.35);
-                transition: all 0.25s ease;
-            }
+        /* Mobile menu */
+        .mobile-menu{
+          display:none;
+          position:absolute;
+          top:100%;
+          left:0;
+          right:0;
+          background:#fff;
+          padding:1.5rem;
+          flex-direction:column;
+          gap:1rem;
+          box-shadow:0 10px 20px rgba(0,0,0,.1);
+        }
 
-            .cta-button:hover {
-                transform: translateY(-1px);
-                box-shadow: 0 6px 16px rgba(212,160,23,0.45);
-            }
+        .mobile-menu.open{
+          display:flex;
+        }
 
-            /* Mobile */
-            .mobile-menu-button {
-                display: none;
-                background: none;
-                border: none;
-                cursor: pointer;
-                color: #2b6e4a;
-            }
+        .mobile-link{
+          font-weight:600;
+          color:#333;
+          text-decoration:none;
+          padding:.6rem 0;
+          border-bottom:1px solid #eee;
+        }
 
-            @media (max-width: 768px) {
-                .mobile-menu-button {
-                    display: block;
-                }
+        .mobile-cta{
+          text-align:center;
+        }
 
-                .nav-links {
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    right: 0;
-                    background: white;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    gap: 1.2rem;
-                    padding: 1.5rem 2rem;
-                    border-bottom: 1px solid rgba(0,0,0,0.08);
-                    display: none;
-                }
+        @media(max-width:768px){
+          .nav-links{display:none;}
+          .hamburger{display:flex;}
+        }
+      </style>
 
-                .nav-links.active {
-                    display: flex;
-                }
+      <div class="navbar-container">
+        <a href="index.html" class="logo">
+          IRONBLADE
+        </a>
 
-                .cta-button {
-                    width: 100%;
-                    justify-content: center;
-                }
-            }
-        </style>
-
-        <div class="navbar-container">
-            <a href="/" class="logo">
-                <i data-feather="scissors" class="logo-icon"></i>
-                IRONBLADE
-            </a>
-
-            <button class="mobile-menu-button">
-                <i data-feather="menu"></i>
-            </button>
-
-            <div class="nav-links">
-                <a href="/" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="services.html" class="nav-link">Services</a>
-                <a href="testimonials.html" class="nav-link">Testimonials</a>
-                <a href="contact.html" class="cta-button">
-                    <i data-feather="phone"></i>
-                    Free Quote
-                </a>
-            </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="testimonials.html" class="nav-link">Testimonials</a>
+          <a href="contact.html" class="cta-button">Free Quote</a>
         </div>
-        `;
 
-        const mobileMenuButton = this.shadowRoot.querySelector('.mobile-menu-button');
-        const navLinks = this.shadowRoot.querySelector('.nav-links');
+        <!-- Hamburger -->
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-        mobileMenuButton.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            const icon = mobileMenuButton.querySelector('i');
-            icon.setAttribute(
-                'data-feather',
-                navLinks.classList.contains('active') ? 'x' : 'menu'
-            );
-            feather.replace();
-        });
+        <!-- Mobile menu -->
+        <div class="mobile-menu">
+          <a href="index.html" class="mobile-link">Home</a>
+          <a href="about.html" class="mobile-link">About</a>
+          <a href="services.html" class="mobile-link">Services</a>
+          <a href="testimonials.html" class="mobile-link">Testimonials</a>
+          <a href="contact.html" class="cta-button mobile-cta">Free Quote</a>
+        </div>
+      </div>
+    `;
 
-        this.shadowRoot.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                const icon = mobileMenuButton.querySelector('i');
-                icon.setAttribute('data-feather', 'menu');
-                feather.replace();
-            });
-        });
+    const burger = this.shadowRoot.querySelector(".hamburger");
+    const menu = this.shadowRoot.querySelector(".mobile-menu");
 
-        feather.replace();
-    }
+    burger.addEventListener("click", e => {
+      e.stopPropagation();
+      burger.classList.toggle("active");
+      menu.classList.toggle("open");
+    });
+
+    // close when link clicked
+    this.shadowRoot.querySelectorAll(".mobile-link,.mobile-cta")
+      .forEach(link=>{
+        link.addEventListener("click",()=>{
+          burger.classList.remove("active");
+          menu.classList.remove("open");
+        })
+      });
+
+    // close when clicking outside
+    document.addEventListener("click", e=>{
+      if(!e.composedPath().includes(this)){
+        burger.classList.remove("active");
+        menu.classList.remove("open");
+      }
+    });
+  }
 }
 
-customElements.define('ironblade-navbar', IronbladeNavbar);
+customElements.define("ironblade-navbar", IronbladeNavbar);
