@@ -10,8 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const contactForm = document.querySelector('form');
         if (contactForm) {
             contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                form.submit();
                 alert('Thank you for your message! We will contact you soon.');
                 this.reset();
             });
